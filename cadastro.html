@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bairro Quinta dos Açorianos - Cadastro</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            }
+
+            nav li {
+            display: inline;
+            margin-right: 10px;
+            }
+            
+            nav #home-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            margin-right: 10px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="home-button" onclick="window.location.href='index.html'">&#8962;</button>
+            <img src="/image/logo_quintadosacorianos.png" alt="logo_quintadosacorianos">
+            <ul>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li><a href="diretoria.html">Diretoria</a></li>
+                <li><a href="iniciativas.html">Iniciativas</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <form action="/search" method="get">
+                <input type="search" name="q" placeholder="Pesquisar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+<hr>
+
+    <main>
+        <section id="contato">
+            <h1>Cadastro</h1>
+            <h2>Queremos fazer do nosso bairro um lugar melhor!</h2>
+            <p>Estamos fazendo o mapeamento dos moradores do bairro para buscar melhorias junto a prefeitura.</p>
+            <form action="/submit" method="post">
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+    
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone"><br><br>
+
+                <label for="tipo_residencia">Tipo de residência:</label><br>
+                <input type="radio" id="casa_propria" name="tipo_residencia" value="propria">
+                <label for="casa_propria">Casa própria</label><br>
+
+                <input type="radio" id="casa_alugada" name="tipo_residencia" value="alugada">
+                <label for="casa_alugada">Casa alugada</label><br>
+    
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="rua">Rua:</label><br>
+                    <input type="text" id="rua" name="rua"><br><br>
+    
+                    <label for="numero">Número:</label><br>
+                    <input type="text" id="numero" name="numero"><br><br>
+    
+                    <label for="complemento">Complemento:</label><br>
+                    <input type="text" id="complemento" name="complemento"><br><br>
+    
+                    <label for="bairro">Bairro:</label><br>
+                    <input type="text" id="bairro" name="bairro"><br><br>
+    
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" id="cidade" name="cidade"><br><br>
+    
+                    <label for="estado">Estado:</label><br>
+                    <input type="text" id="estado" name="estado"><br><br>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Moradores</legend>
+                    <label for="adultos">Adultos:</label>
+                    <input type="number" id="adultos" name="adultos" min="0"><br><br>
+
+                    <label for="idade">Idade dos adultos:</label>
+                    <input type="text" id="idade" name="idade"><br><br>
+    
+                    <label for="criancas">Crianças:</label>
+                    <input type="number" id="criancas" name="criancas" min="0"><br><br>
+    
+                    <label for="idade">Idade das crianças:</label>
+                    <input type="text" id="idade" name="idade"><br><br>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Iniciativas</legend>
+                    <p>Você ou os moradores da sua residência tem interesse algum iniciativa?</p>
+                    <input type="checkbox" id="iniciativa1" name="iniciativa1" value="iniciativa1">
+                    <label for="iniciativa1">Iniciativa 1</label><br>
+    
+                    <input type="checkbox" id="iniciativa2" name="iniciativa2" value="iniciativa2">
+                    <label for="iniciativa2">Iniciativa 2</label><br>
+    
+                    <input type="checkbox" id="iniciativa3" name="iniciativa3" value="iniciativa3">
+                    <label for="iniciativa3">Iniciativa 3</label><br>
+    
+                    <input type="checkbox" id="iniciativa4" name="iniciativa4" value="iniciativa4">
+                    <label for="iniciativa4">Iniciativa 4</label><br><br>
+
+                    <p>Faremos contato sobre a sua escolha da iniciativa para passar mais informações.</p>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Cadastro de animais de estimação</legend>
+                    <input type="checkbox" id="especie" name="especie" value="cachorro">
+                    <label for="especie">Cachorro</label><br>
+    
+                    <input type="checkbox" id="especie" name="especie" value="gato">
+                    <label for="especie">Gato</label><br><br>
+    
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="0"><br><br>
+    
+                    <label for="genero">Gênero:</label>
+                    <input type="text" id="genero" name="genero"><br><br>
+    
+                    <label for="castrado">Castrado(s):</label>
+                    <input type="checkbox" id="castrado" name="castrado" value="sim"><br><br>
+    
+                    <label for="vacinado">Vacinado(s):</label>
+                    <input type="checkbox" id="vacinado" name="vacinado" value="sim"><br><br>
+    
+                    <label for="acesso_rua">Possuem acesso à rua:</label>
+                    <input type="checkbox" id="acesso_rua" name="acesso_rua" value="sim"><br><br>
+
+                    <label for="interesse_castracao">Tem interesse em valores para castração social?</label><br>
+                <input type="radio" id="interesse_castracao_sim" name="interesse_castracao" value="sim">
+                <label for="interesse_castracao_sim">Sim</label><br>
+
+                <input type="radio" id="interesse_castracao_nao" name="interesse_castracao" value="nao">
+                <label for="interesse_castracao_nao">Não</label><br>
+
+                </fieldset>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+<hr>
+
+    <footer>
+        <img src="/image/logo_quintadosacorianos.png" alt="logo_quintadosacorianos">
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li><a href="quem_somos.html">Quem Somos</a></li>
+            <li><a href="diretoria.html">Diretoria</a></li>
+            <li><a href="iniciativas.html">Iniciativas</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <p>Endereço: Rua Principal, 123 - Quinta dos Açorianos - Barra Velha - SC</p>
+        <p>Telefone: (00) 1234-5678</p>
+        <p>E-mail: contato@quintadosacorianos.com.br</p>
+    </footer>
+</body>
+
+</html>
