@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bairro Quinta dos Açorianos</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -17,6 +30,10 @@
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
+            <form action="/search" method="get">
+                <input type="search" name="q" placeholder="Pesquisar...">
+                <button type="submit">Buscar</button>
+            </form>
 <hr>
         </nav>
     </header>
@@ -132,12 +149,29 @@
             </div>
         </section>
 <hr>
+        <section id="newsletter">
+            <h2>Inscreva-se para receber novidades</h2>
+            <form action="/inscrever" method="post">
+                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                <button type="submit">Inscrever</button>
+            </form>
+        </section>
+<hr>
     </main>
 
+    
     <footer>
-        <p>Endereço: Rua Principal, 123 - Quinta dos Açorianos</p>
+        <img src="/image/logo_quintadosacorianos.png" alt="logo_quintadosacorianos">
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li><a href="index.html">Quem Somos</a></li>
+            <li><a href="iniciativas.html">Iniciativas</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="docentes.html">Corpo Docente</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <p>Endereço: Rua Principal, 123 - Quinta dos Açorianos - Barra Velha - SC</p>
         <p>Telefone: (00) 1234-5678</p>
-        <p>Email: contato@quintadosacorianos.com</p>
+        <p>E-mail: contato@quintadosacorianos.com.br</p>
     </footer>
     
 </body>
