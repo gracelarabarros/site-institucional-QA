@@ -3,10 +3,13 @@
         padding: 0;
     }
 
-    /* Navbar */
+    /* -------------------------Navbar------------------------- */
 
-    #nav {
+    nav {
         height: 96px;
+        width: 100%;
+        margin: 24px, 48px;
+        padding: 24px;
     }
 
     nav ul {
@@ -28,7 +31,7 @@
 
     }
 
-    /* Texto */
+    /* -------------------------Texto------------------------- */
 
     h1 {
         font-family: "MontSerrat", sans-serif;
@@ -58,7 +61,7 @@
         font-size: 16px;
     }
 
-    /* Botão */
+    /* -------------------------Botão------------------------- */
 
     button {
         display: block;
