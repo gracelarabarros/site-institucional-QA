@@ -123,7 +123,7 @@
         font-size: 16px;
     }
 
-    /* -------------------------Botão------------------------- */
+    /* -------------------------Botões------------------------- */
 
     button {
         display: block;
@@ -144,3 +144,31 @@
         background-color: #e6e601;
     }
 
+    /* -------------------------Banner pages------------------------- */
+
+    #banner {
+        background-color: #e6f7fe;
+        padding: 24px;
+        position: relative; 
+        height: 300px;
+        border-radius: 32px;
+    }
+
+    .banner-content {
+        max-width: 500px; 
+        position: absolute; 
+        left: 96px;
+        top: 50%;
+        transform: translateY(-50%); 
+    }
+
+    #banner img {
+        position: absolute;
+        top: 0;
+        right: 0%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+    
