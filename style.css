@@ -93,13 +93,14 @@
             color: #FFFFFF;
         }
 
-    /* -------------------------Texto------------------------- */
+    /* -------------------------textos------------------------- */
 
     h1 {
         font-family: "MontSerrat", sans-serif;
         color: #019edb;
         font-weight: bold;
         font-size: 40px;
+        line-height: 1.2;
     }
 
     h2 {
@@ -107,6 +108,7 @@
         color: #595959;
         font-weight: bold;
         font-size: 32px;
+        line-height: 1.2;
     }
 
     h3 {
@@ -114,6 +116,7 @@
         color: #595959;
         font-weight: bold;
         font-size: 24px;
+        line-height: 1.2;
     }
 
     body {
@@ -121,9 +124,10 @@
         color: #8c8c8c;
         font-weight: 400;
         font-size: 16px;
+        line-height: 1.5;
     }
 
-    /* -------------------------Botões------------------------- */
+    /* -------------------------button------------------------- */
 
     button {
         display: block;
@@ -144,7 +148,7 @@
         background-color: #e6e601;
     }
 
-    /* -------------------------Banner pages------------------------- */
+    /* -------------------------banner------------------------- */
 
     #banner {
         background-color: #e6f7fe;
@@ -170,5 +174,156 @@
         object-fit: cover;
     }
 
+    /* -------------------------home-topicos------------------------- */
+
+    #home-topicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 72px;
+    }
+    
+    .sessao-topicos {
+        flex-basis: 200px;
+        padding: 16px;
+        margin-bottom: 24px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .sessao-topicos img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 16px;
+    }
+    
+    /* -------------------------home-iniciativas------------------------- */
+    
+    #iniciativas {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .banner-iniciativas {
+        flex: 1;
+    }
+    
+    .lista-iniciativas {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Espaçamento entre as iniciativas */
+    }
+    
+    .iniciativa {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* -------------------------home-diretoria------------------------- */
+
+    #diretoria {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    #diretoria h2 {
+        font-size: 32px;
+        color: #333;
+    }
+
+    #diretoria h3 {
+        font-size: 24px;
+        color: #555;
+    }
+
+    #diretoria p {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 20px;
+    }
+
+    .diretoria-item {
+        margin-bottom: 30px;
+    }
+
+    .diretoria-item img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .diretoria-item p {
+        font-size: 18px;
+        color: #444;
+    }
+
+    /* -------------------------noticias------------------------- */
+
+    #noticias {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    #noticias h2 {
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .noticia {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .noticia img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+
+    
+    /* -------------------------footer------------------------- */
+
+    footer {
+        background-color: #f8f9fa;
+        padding: 24px;
+        text-align: center;
+    }
+    
+    footer img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 16px;
+    }
+    
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    footer p {
+        margin-top: 16px;
+        font-size: 14px;
+        color: #6c757d;
+    }
+    
     
     

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
     <div class="container">
     <header>
@@ -31,6 +32,7 @@
         </nav>
     </header>
 
+
     <main>
         <section id="banner">
             <div class="banner-content">
@@ -40,42 +42,55 @@
         <img src="image/ponte_pencil.png" alt="Banner Principal">
         </section>
 
-        <section id="topicos-bairro">
+
+        <section id="home-topicos">
             <div class="sessao-topicos">
                 <img src="icone1.png" alt="Ícone 1">
                 <h3>Título do tópico</h3>
                 <p>Descrição do tópico 1 - Consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing.</p>
             </div>
-            <div class="sessao_topicos">
+            <div class="sessao-topicos">
                 <img src="icone2.png" alt="Ícone 2">
                 <h3>Título do tópico</h3>
                 <p>Descrição do tópico 2 - Consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing.</p>
             </div>
-            <div class="sessao_topicos">
+            <div class="sessao-topicos">
                 <img src="icone3.png" alt="Ícone 3">
                 <h3>Título do tópico</h3>
                 <p>Descrição do tópico 3 - Consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing.</p>
             </div>
-            <div class="sessao_topicos">
+            <div class="sessao-topicos">
                 <img src="icone4.png" alt="Ícone 4">
                 <h3>Título do tópico</h3>
                 <p>Descrição do tópico 4 - Consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing.</p>
             </div>
         </section>
-<hr>
+
+        
         <section id="iniciativas">
-            <div class="sesso_iniciativas">
+            <div class="banner-iniciativas">
                 <img src="banner_iniciaivas.png" alt="Banner iniciativas">
-                <h2>Título da iniciativa selecionada - 1</h3>
+                <h2>Título da iniciativa selecionada - 1</h2>
+                <p>Pesquena descrição da iniciativa</p>
+                <button onclick="window.location.href='iniciativas.html'">CTA para página de iniciativas</a>
+            </div>
+            <div class="lista-iniciativas">
+                <div class="iniciativa">
+                    <h3>Título da iniciativa - 1</h3>
                     <p>Pesquena descrição da iniciativa</p>
-                <a href="iniciativas.html">CTA para página de iniciativas</a>
+                </div>
+                <div class="iniciativa">
                     <h3>Título da iniciativa - 2</h3>
-                        <p>Pesquena descrição da iniciativa</p>
+                    <p>Pesquena descrição da iniciativa</p>
+                </div>
+                <div class="iniciativa">
                     <h3>Título da iniciativa - 3</h3>
-                        <p>Pesquena descrição da iniciativa</p>
+                    <p>Pesquena descrição da iniciativa</p>
+                </div>
             </div>
         </section>
-    <hr>
+
+
         <section id="diretoria">
             <h2>Diretoria Vigente</h2>
             <h3>Conheça quem está a frente da mudança!</h3>
@@ -101,15 +116,11 @@
                 <p>Cargo: Secretário</p>
             </div>
         
-            <a href="diretoria.html" class="cta">Conheça a diretoria completa</a>
-        </section>
-<hr>
+            <button onclick="window.location.href='diretoria.html'">Conheça a diretoria completa</button>
 
-        <style>
-            .noticia {
-                margin-bottom: 20px;
-            }
-        </style>
+        </section>
+
+
 
         <section id="noticias">
             <h2>Últimas Notícias</h2>
@@ -118,31 +129,32 @@
                 <img src="noticia1.jpg" alt="Imagem da notícia 1">
                 <h3>Notícia 1</h3>
                 <p>Descrição breve da notícia 1.</p>
-                <a href="noticia1.html" class="cta">Ver Mais</a>
+                <button onclick="window.location.href='noticia1.html'">Ver mais</button>
             </div>
 
             <div class="noticia">
                 <img src="noticia2.jpg" alt="Imagem da notícia 2">
                 <h3>Notícia 2</h3>
                 <p>Descrição breve da notícia 2.</p>
-                <a href="noticia2.html" class="cta">Ver Mais</a>
+                <button onclick="window.location.href='noticias.html'">Ver mais</button>
             </div>
 
             <div class="noticia">
                 <img src="noticia3.jpg" alt="Imagem da notícia 3">
                 <h3>Notícia 3</h3>
                 <p>Descrição breve da notícia 3.</p>
-                <a href="noticia3.html" class="cta">Ver Mais</a>
+                <button onclick="window.location.href='noticias.html'">Ver mais</button>
             </div>
 
             <div class="noticia">
                 <img src="noticia4.jpg" alt="Imagem da notícia 4">
                 <h3>Notícia 4</h3>
                 <p>Descrição breve da notícia 4.</p>
-                <a href="noticia4.html" class="cta">Ver Mais</a>
+                <button onclick="window.location.href='noticias.html'">Ver mais</button>
             </div>
         </section>
-<hr>
+
+
         <section id="newsletter">
             <h2>Inscreva-se para receber novidades</h2>
             <form action="/inscrever" method="post">
@@ -150,8 +162,9 @@
                 <button type="submit">Inscrever</button>
             </form>
         </section>
-<hr>
     </main>
+
+
     <footer>
         <img src="image/logo_quintadosacorianos.png" alt="logo_quintadosacorianos">
         <ul style="list-style-type: none; padding: 0; margin: 0;">
