@@ -16,7 +16,8 @@
         .navbar {
             background-color: #FFFFFF;
             height: 96px;
-            margin: 0;
+            margin-top: 16px;
+            margin-bottom: 16px;
             display: flex;  
             justify-content: space-between;
             align-items: center;
@@ -155,7 +156,7 @@
         padding: 24px;
         position: relative; 
         height: 300px;
-        border-radius: 32px;
+        border-radius: 16px;
     }
 
     .banner-content {
@@ -187,18 +188,23 @@
         flex-basis: 200px;
         padding: 16px;
         margin-bottom: 24px;
-        text-align: center;
+        text-align: left;
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: 16px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     
-    .sessao-topicos img {
-        width: 64px;
-        height: 64px;
-        margin-bottom: 16px;
+    .sessao-topicos svg {
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+    }
+
+    .sessao-topicos p {
+        font-size: 14px;
     }
     
+
     /* -------------------------home-iniciativas------------------------- */
     
     #iniciativas {
@@ -228,71 +234,113 @@
 
     #diretoria {
         text-align: center;
-        padding: 50px 0;
+        padding: 16px;
     }
-
-    #diretoria h2 {
-        font-size: 32px;
-        color: #333;
+    
+    .diretoria-title {
+        margin-bottom: 24px;
     }
-
-    #diretoria h3 {
-        font-size: 24px;
-        color: #555;
+    
+    .diretoria-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px;
     }
-
-    #diretoria p {
-        font-size: 16px;
-        color: #777;
-        margin-bottom: 20px;
-    }
-
+    
     .diretoria-item {
-        margin-bottom: 30px;
+        flex-basis: 200px;
+        padding: 16px;
+        margin-bottom: 24px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-
+    
     .diretoria-item img {
-        width: 150px;
-        height: 150px;
+        width: 100%;
         border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 10px;
     }
-
-    .diretoria-item p {
-        font-size: 18px;
-        color: #444;
-    }
-
+    
     /* -------------------------noticias------------------------- */
 
     #noticias {
+        /* Estilos para a seção de notícias */
+    }
+    
+    .noticias-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .noticia {
+        width: calc(50% - 20px); /* Para duas colunas, ajuste conforme necessário */
+        margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+    }
+    
+    .noticia img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .noticia h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .noticia p {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .noticia button {
+        padding: 10px 20px;
+        background-color: #019edb;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .noticia button:hover {
+        background-color: #018dc2;
+    }    
+
+    /* -------------------------newsletter------------------------- */
+
+    #newsletter {
+        background-color: #f9f9f9;
         padding: 50px 0;
         text-align: center;
     }
-
-    #noticias h2 {
+    
+    #newsletter h2 {
         font-size: 32px;
         color: #333;
         margin-bottom: 20px;
     }
-
-    .noticia {
-        background-color: #f9f9f9;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        margin-bottom: 20px;
+    
+    #newsletter form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
-
-    .noticia img {
-        width: 100%;
-        height: auto;
+    
+    #newsletter input[type="email"] {
+        padding: 10px;
         border-radius: 5px;
-        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        width: 250px;
     }
-
-
     
     /* -------------------------footer------------------------- */
 
