@@ -98,8 +98,7 @@
         }
         
         #home-button:hover {
-            background-color: #000000;
-            color: #FFFFFF;
+            background-color: #d9f3fd;
         }
 
     /* -------------------------textos------------------------- */
@@ -458,33 +457,56 @@
     /* -------------------------footer------------------------- */
 
     footer {
-        background-color: #f8f9fa;
-        padding: 24px;
-        text-align: center;
+        display: grid;
+        grid-template-columns: 10% 30% 60%;
+        align-items: center;
+        gap: 32px;
+        margin-top: 56px;
+        margin-bottom: 56px;
     }
     
     footer img {
         width: 100px;
         height: auto;
         margin-bottom: 16px;
+        align-items: center;
+    }
+
+    .footer-infos {
+        text-align: start;
     }
     
-    footer ul {
+    .footer {
         list-style-type: none;
+        display: flex;
+        flex-direction: inline;
         padding: 0;
         margin: 0;
     }
     
-    footer ul li {
-        display: inline-block;
-        margin-right: 10px;
+    .footer li {
+        margin-right: 40px;
     }
     
-    footer p {
-        margin-top: 16px;
-        font-size: 14px;
-        color: #6c757d;
+    .footer a {
+        text-decoration: none;
+        font-family: "MontSerrat", sans-serif;
+        color: #595959; 
+        font-weight: 400; 
+        transition: font-weight 0.3s ease;
     }
+    
+    .footer a:hover {
+        font-weight: bold;
+        color: #019edb;
+    }
+    
+    .footer a:active {
+        font-weight: bold;
+        color: #018dc2;
+    }
+    
+
     
     
     
