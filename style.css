@@ -302,10 +302,6 @@ body {
     color: white;
 }
 
-.banner-iniciativas button {
-    position: relative;
-    z-index: 2;
-}
 
 /* -------------------------home-diretoria------------------------- */
 
@@ -541,34 +537,48 @@ footer img {
     background-color: #e6f7fe;
     padding: 40px;
     text-align: center;
-    align-items: center;
     border-radius: 16px;
+}
+
+#contato form {
+    display: grid;
+    place-items: center; 
+    max-width: 600px; 
+    margin: 0 auto;
 }
 
 #contato input {
     height: 24px;
-    width: 400px;
+    width: 100%; 
+    max-width: 500px; 
     padding: 8px;
-    margin-bottom: 16px;
     border: 1px solid #b0e7fb;
     border-radius: 8px;
-    color: #8c8c8c; /
+    color: #8c8c8c;
 }
 
 #contato textarea {
     height: 150px;
-    width: 400px;
+    width: 100%; 
+    max-width: 500px; 
     padding: 8px;
-    margin-bottom: 16px;
     border: 1px solid #b0e7fb;
     border-radius: 8px;
-    color: #333; /
 }
 
-#contato-form label {
-    display: block; /* Exibir o label em uma nova linha */
-    margin-bottom: 8px;
-    color: #333;
-    font-weight: bold;
+#contato label {
+    text-align: start;
+    width: 100%; 
+    max-width: 500px;
+    margin-bottom: 4px; 
 }
 
+#contato button {
+    align-items: center;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+    outline: none; 
+    box-shadow: 0 0 5px #b0e7fb;
+}
