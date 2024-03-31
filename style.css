@@ -461,9 +461,6 @@ body {
     border-color: #b0e7fb;
 }
 
-
-
-
 /* -------------------------footer------------------------- */
 
 footer {
@@ -484,6 +481,11 @@ footer img {
 
 .footer-infos {
     text-align: start;
+}
+
+.ul-social-buttons {
+    display: grid;
+    gap: 16px;
 }
 
 .footer {
@@ -515,3 +517,58 @@ footer img {
     font-weight: bold;
     color: #018dc2;
 }
+
+.social-buttons a {
+    margin-left: 16px;
+}
+
+.social-buttons a svg {
+    width: 32px;
+    height: 32px;
+    fill: #01b0f3; 
+    transition: transform 0.3s, fill 0.3s; 
+}
+
+.social-buttons a:hover svg {
+    transform: scale(1.1);
+    fill: #018dc2; 
+}
+
+
+/* -------------------------page-contato------------------------- */
+
+#contato {
+    background-color: #e6f7fe;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+#contato input {
+    height: 24px;
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #b0e7fb;
+    border-radius: 8px;
+    color: #8c8c8c; /
+}
+
+#contato textarea {
+    height: 150px;
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #b0e7fb;
+    border-radius: 8px;
+    color: #333; /
+}
+
+#contato-form label {
+    display: block; /* Exibir o label em uma nova linha */
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
