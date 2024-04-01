@@ -562,34 +562,7 @@ footer img {
 
 /* -------------------------page-iniciativas------------------------- */
 
-#iniciativas {
-    display: flex;
-    justify-content: center;
-}
 
-.iniciativa {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.iniciativa-img {
-    flex: 0 0 50%; 
-    max-width: 600px;
-    max-height: 300px;
-    margin-right: 20px;
-}
-
-.iniciativa-img img {
-    max-width: 600px;
-    height: auto;
-    display: block;
-    border-radius: 16px;
-}
-
-.iniciativa-content {
-    flex: 1;
-}
 
 
 
