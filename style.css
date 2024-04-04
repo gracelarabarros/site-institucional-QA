@@ -303,6 +303,8 @@ body {
 }
 
 
+
+
 /* -------------------------home-diretoria------------------------- */
 
 #diretoria {
@@ -563,7 +565,127 @@ footer img {
 /* -------------------------page-iniciativas------------------------- */
 
 
+/* -------------------------page-cadastro------------------------- */
 
+#cadastro {
+    background-color: #e6f7fe;
+    padding: 40px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+#cadastro label {
+    text-align: start;
+    width: 100%; 
+    max-width: 500px;
+    margin-bottom: 4px; 
+}
+
+#cadastro input {
+    height: 24px;
+    width: 100%; 
+    max-width: 500px; 
+    padding: 8px;
+    border: 1px solid #b0e7fb;
+    border-radius: 8px;
+    color: #8c8c8c;
+}
+
+#cadastro input:focus{
+    outline: none; 
+    box-shadow: 0 0 5px #b0e7fb;
+}
+
+#cadastro form {
+    display: grid;
+    place-items: center; 
+    margin: 0 auto;
+}
+
+#cadastro fieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+    border: solid 2px white;
+    background-color: none;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.radio-group {
+    display: grid;
+    grid-row: auto;
+    width: 500px;
+    height: auto;
+}
+
+.cadastro-radios {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.one-radio {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+input[type="radio"] {
+    height: 24px !important;
+    width: 24px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #b0e7fb !important; 
+    border-radius: 100% !important;
+    outline: none; 
+    background-color: white;
+}
+
+input[type="radio"]:checked {
+    background-color: #01b0f3;  
+}
+
+.chackbox-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.one-checkbox {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    gap: 4px;
+}
+
+input[type="checkbox"] {
+    height: 24px !important;
+    width: 24px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #b0e7fb !important; 
+    border-radius: 8px;
+    outline: none; 
+    background-color: white;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #01b0f3;
+    height: 20px !important;
+    width: 20px !important;
+    padding: 8px;  
+}
+
+#cadastro button {
+    align-items: center;
+
+}
 
 
 /* -------------------------page-contato------------------------- */
