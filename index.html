@@ -85,21 +85,57 @@
             <div class="iniciativas-tittle">
                 <div class="iniciativas-text">
                     <h2>Conheça nossas iniciativas</h2>
-                    <h3 class="destaque">Aqui presamos por envolver a comunidade nas atividades!</h3>
-                    <p>Proporcionando bem-estar as famílias residentes no bairro.</p>
+                    <h3 class="destaque">Aqui prezamos por envolver a comunidade nas atividades!</h3>
+                    <p>Proporcionando bem-estar às famílias residentes no bairro.</p>
                 </div>
                 <div class="diretoria-button">
-                    <button class="button-1"onclick="window.location.href='iniciativas.html'">Saber mais</button>
+                    <button class="button-1" onclick="window.location.href='iniciativas.html'">Saber mais</button>
                 </div>
             </div>
-
+        
             <div class="banner-iniciativas">
-                <div class="overlay"></div>
-                <h2>Escolhinha de Futebol</h2>
+                <div class="mySlides fade">
+                    <div class="overlay"></div>
+                    <h2>Escolhinha de Futebol</h2>
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="overlay"></div>
+                    <h2>Surf para todos</h2>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="overlay"></div>
+                    <h2>Surf para todos</h2>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="overlay"></div>
+                    <h2>Surf para todos</h2>
+                </div>
 
             </div>
 
+            <!-- JAVA -->
 
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    slides[slideIndex - 1].style.animation = "slideIn 1s forwards";
+                    setTimeout(showSlides, 2000); // Troca a imagem a cada 2 segundos
+                }
+            </script>
             
         </section>
 

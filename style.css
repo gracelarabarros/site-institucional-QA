@@ -269,8 +269,8 @@ body {
     }  
 
 .banner-iniciativas {
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: flex-end;
     align-items: start;
@@ -297,12 +297,30 @@ body {
 }
 
 .banner-iniciativas h2 {
-    position: relative;
-    z-index: 2;
     color: white;
+    position: relative;
+    z-index: 1;
+    padding: 24px;
+    text-align:center;
+}
+  
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
-
+.mySlides {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 /* -------------------------home-diretoria------------------------- */
@@ -677,8 +695,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
     background-color: #01b0f3;
-    height: 20px !important;
-    width: 20px !important;
+    height: 24px !important;
+    width: 24px !important;
     padding: 8px;  
 }
 
