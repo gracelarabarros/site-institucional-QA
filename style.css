@@ -221,17 +221,19 @@ body {
 
 #home-topicos {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 14px;
+    flex-wrap: wrap;
+    align-items: stretch;
     margin-bottom: 104px;
     }
 
 .sessao-topicos {
     flex-grow: 1;
+    align-items: center;
     max-width: calc(25% - 0px); 
     flex-basis: calc(25% - 16px); 
     border-radius: 8px; 
     overflow: hidden;
+    text-align: center;
 }
 
 .sessao-topicos svg {
@@ -243,12 +245,9 @@ body {
     margin-bottom: 16px;
 }
 
-.sessao-topicos p {
-    font-size: 14px;
-}
-
-.sessao-topicos h3 {
+.sessao-topicos h2 {
     margin-bottom: 16px;
+    text-align: center;
 }
 
 /* -------------------------home-iniciativas------------------------- */
