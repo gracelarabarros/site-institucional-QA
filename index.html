@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -79,7 +80,7 @@
         </section>
 
         <!-- INICIATIVAS -->
-        
+
         <section id="iniciativas">
 
             <div class="iniciativas-tittle">
@@ -94,27 +95,28 @@
             </div>
         
             <div class="banner-iniciativas">
-                <div class="mySlides fade">
-                    <div class="overlay"></div>
-                    <h2>Escolhinha de Futebol</h2>
-                </div>
-        
-                <div class="mySlides fade">
-                    <div class="overlay"></div>
-                    <h2>Surf para todos</h2>
-                </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides fade" style="background-image: url('image/projeto-futebol.jpg')">
                     <div class="overlay"></div>
-                    <h2>Surf para todos</h2>
+                    <h2 class="slide-title" style="font-size: 64px;">Escolinha de <br>Futebol</h2>
                 </div>
-
-                <div class="mySlides fade">
+                
+                <div class="mySlides fade" style="background-image: url('image/projeto-surf.jpg')">
                     <div class="overlay"></div>
-                    <h2>Surf para todos</h2>
+                    <h2 class="slide-title" style="font-size: 64px;">Projeto surf <br>para todos</h2>
                 </div>
+                
+                <div class="mySlides fade" style="background-image: url('image/projeto-yoga.jpg')">
+                    <div class="overlay"></div>
+                    <h2 class="slide-title" style="font-size: 64px;">Projeto yoga <br>na praia</h2>
+                </div>
+                
+                <div class="mySlides fade" style="background-image: url('image/projeto-castracao.jpg')">
+                    <div class="overlay"></div>
+                    <h2 class="slide-title" style="font-size: 64px;">Projeto <br>castração social</h2>
+                </div>            
 
-            </div>
+            </div>        
 
             <!-- JAVA -->
 
@@ -132,9 +134,17 @@
                         slideIndex = 1;
                     }
                     slides[slideIndex - 1].style.display = "block";
-                    slides[slideIndex - 1].style.animation = "slideIn 1s forwards";
-                    setTimeout(showSlides, 2000); // Troca a imagem a cada 2 segundos
+
+                    var currentSlide = slides[slideIndex - 1];
+                    var imageStyle = getComputedStyle(currentSlide).backgroundImage;
+                    var image = imageStyle.replace('url("', '').replace('")', '');
+                    var text = currentSlide.querySelector(".slide-title").innerText;
+                    document.querySelector(".banner-iniciativas").style.backgroundImage = "url(" + image + ")";
+                    document.querySelector(".banner-iniciativas h2").innerText = text;
+
+                    setTimeout(showSlides, 2000);
                 }
+
             </script>
             
         </section>
