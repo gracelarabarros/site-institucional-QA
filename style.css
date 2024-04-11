@@ -292,7 +292,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 16px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     z-index: 1;
 }
 
@@ -573,6 +573,36 @@ footer img {
 
 
 /* -------------------------page-iniciativas------------------------- */
+
+.iniciativa {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.iniciativa-img {
+    flex: 0 0 700px;
+    height: 250px;
+    margin-right: 0px;
+    overflow: hidden;
+
+}
+
+.iniciativa-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.iniciativa-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.iniciativa-content p {
+    line-height: 1.6;
+}
 
 
 /* -------------------------page-noticias------------------------- */
