@@ -577,15 +577,14 @@ footer img {
 .iniciativa {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .iniciativa-img {
-    flex: 0 0 700px;
+    flex: 0 0 450px;
     height: 250px;
-    margin-right: 0px;
+    margin-right: 40px;
     overflow: hidden;
-
 }
 
 .iniciativa-img img {
