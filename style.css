@@ -474,12 +474,13 @@ body {
 /* -------------------------footer------------------------- */
 
 footer {
-    display: grid;
-    grid-template-columns: 10% 30% 60%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    max-width: 100%;
     gap: 32px;
     margin-top: 56px;
-    margin-bottom: 56px;
+    margin-bottom: 32px;
 }
 
 footer img {
@@ -495,19 +496,21 @@ footer img {
 
 .ul-social-buttons {
     display: grid;
-    gap: 16px;
+    grid-row: auto;
+    max-width: fit-content;
+    gap: 32px;
 }
 
 .footer {
     list-style-type: none;
     display: flex;
-    flex-direction: inline;
-    padding: 0;
-    margin: 0;
+    max-width: 100%;
+    justify-content: end;
+
 }
 
 .footer li {
-    margin-left: 40px;
+    margin-left: 32px;
 }
 
 .footer a {
@@ -528,8 +531,15 @@ footer img {
     color: #018dc2;
 }
 
+.social-buttons {
+    display: flex;
+    justify-content:flex-end;
+}
+
 .social-buttons a {
+    display: inline;
     margin-left: 16px;
+    
 }
 
 .social-buttons a svg {
