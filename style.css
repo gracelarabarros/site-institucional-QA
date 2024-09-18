@@ -384,7 +384,7 @@ body {
     display: grid;
     grid-template-columns: 80% 20%;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     align-items: center;
 }
 
