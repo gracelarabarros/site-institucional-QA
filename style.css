@@ -375,14 +375,14 @@ body {
 
 #noticias {
     display: grid;
-    grid-row: 20% 80%;
+    grid-template-rows: 20% 80%; /* Substituir por grid-template-rows */
     width: auto;
     margin-bottom: 88px;
 }
 
-.noticias-tittle {
+.noticias-title {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 80% 20%; /* Corrigido "tittle" para "title" */
     width: 100%;
     margin-bottom: 24px;
     align-items: center;
@@ -392,7 +392,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    
 }
 
 .noticias-card {
@@ -423,12 +422,11 @@ body {
     text-align: start;
 }
 
-
 .noticias-card-info button {
-    margin-top: 16px;    
+    margin-top: 16px;
 }
 
-.noticias-tittle-2 {
+.noticias-title-2 {
     margin-bottom: 16px;
 }
 
