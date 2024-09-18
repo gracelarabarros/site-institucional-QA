@@ -375,14 +375,14 @@ body {
 
 #noticias {
     display: grid;
-    grid-template-rows: 20% 80%; /* Substituir por grid-template-rows */
+    grid-template-rows: 20% 80%; 
     width: auto;
     margin-bottom: 88px;
 }
 
-.noticias-title {
+.noticias-tittle {
     display: grid;
-    grid-template-columns: 80% 20%; /* Corrigido "tittle" para "title" */
+    grid-template-columns: 80% 20%; 
     width: 100%;
     margin-bottom: 24px;
     align-items: center;
