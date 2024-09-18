@@ -374,24 +374,30 @@ body {
 /* -------------------------noticias------------------------- */
 
 #noticias {
-    display: grid;
-    grid-template-rows: 20% 80%; 
+    display: flex;
+    flex-direction: column; /* Alinhando o conteúdo em coluna */
     width: auto;
     margin-bottom: 88px;
 }
 
 .noticias-tittle {
-    display: grid;
-    grid-template-columns: 80% 20%; 
+    display: block; /* Garantindo que o título ocupe toda a linha */
     width: 100%;
     margin-bottom: 24px;
-    align-items: center;
+    text-align: center; /* Centralizando o título */
+}
+
+.noticias-tittle h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
 }
 
 .noticias-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
+    justify-content: center; /* Centralizando os cards */
 }
 
 .noticias-card {
